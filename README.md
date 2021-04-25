@@ -8,6 +8,8 @@ _Simplemente ._
 
 ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
 Mira **Deployment** para conocer como desplegar el proyecto.
 
 
