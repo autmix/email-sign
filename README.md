@@ -10,22 +10,16 @@ _Simplemente abrir el archivo en cualquier navegador y copiar todo el contenido 
 
 Mira **La animación** como guía:
 _Añade la firma a tu servicio de correos_
+
 ![Gif Tutorial 2 para insertar firma](https://media.giphy.com/media/nhaa1zoG9ZrZJVF8ng/giphy.gif)
 
 _Edita la firma con tus datos (en el apartado de firmas o con el editor de tu navegador)_
+
 ![Gif Tutorial 2 para insertar firma ](https://media.giphy.com/media/GYvz2vYo5UEws9uIJT/giphy.gif)
 
 ## Despliegue 📦
 
 _Agrega notas adicionales sobre como hacer deploy_
-
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
 
 ## Contribuyendo 🖇️
 
