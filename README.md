@@ -4,60 +4,16 @@ _Firma realizada en HTML siguiendo los estandares de Gmail, Outlook y Windows Ma
 
 ## ¿Comó usarlo? 🚀
 
-_Simplemente ._
-
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
-
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
-
-Mira **Deployment** para conocer como desplegar el proyecto.
-
-
-### Pre-requisitos 📋
-
-_Que cosas necesitas para instalar el software y como instalarlas_
-
-```
-Da un ejemplo
-```
+_Simplemente abrir el archivo en cualquier navegador y copiar todo el contenido dentro, ```ctrl a - cmd + a (seleccionar todo) | ctrl c - cmd c (copiar)```, una vez copiado basta con pegarlo en el apartado de firmas del servicio de correos electronicos que use (Gmail, Windows 10 Mail y Outlook son soportados) ```ctrl v (pegar) | cmd v (pegar)``` ._
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+Mira **La animación** como guía:
+_Añade la firma a tu servicio de correos_
+![Gif Tutorial 2 para insertar firma](https://media.giphy.com/media/nhaa1zoG9ZrZJVF8ng/giphy.gif)
 
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
+_Edita la firma con tus datos (en el apartado de firmas o con el editor de tu navegador)_
+![Gif Tutorial 2 para insertar firma ](https://media.giphy.com/media/GYvz2vYo5UEws9uIJT/giphy.gif)
 
 ## Despliegue 📦
 
@@ -73,32 +29,4 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 ## Contribuyendo 🖇️
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
+Cualquier detalle o sugerencia  es bienvenida y recibida a mi correo empresarial [c.pena@autmix.com](mailto:c.pena@autmix.com).
