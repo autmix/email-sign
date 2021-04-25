@@ -9,6 +9,7 @@ _Simplemente abrir el archivo en cualquier navegador y copiar todo el contenido 
 ### Instalación 🔧
 
 Mira **La animación** como guía:
+
 _Añade la firma a tu servicio de correos_
 
 ![Gif Tutorial 2 para insertar firma](https://media.giphy.com/media/nhaa1zoG9ZrZJVF8ng/giphy.gif)
