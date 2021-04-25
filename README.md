@@ -20,7 +20,7 @@ _Edita la firma con tus datos (en el apartado de firmas o con el editor de tu na
 
 ## Despliegue 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+_Cualquier actualización del archivo o firma se mantendra en el repositorio al igual toda version creada para la firma de la empresa_
 
 ## Contribuyendo 🖇️
 
