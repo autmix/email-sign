@@ -14,15 +14,25 @@ _Podrás encontrar el archivo ```HTML``` en la sección de ["Releases"](https://
 
 Mira **Las animaciónes** como guía:
 
-_Añade la firma a tu servicio de correos:_
+_Añade la firma a tu servicio de correos (Ejemplo - Gmail):_
 
-![Gif Tutorial 2 para insertar firma](https://media.giphy.com/media/nhaa1zoG9ZrZJVF8ng/giphy.gif)
+![Gif Tutorial 2 para insertar firma](https://media.giphy.com/media/Oj77xUUQfgNTmqboBt/giphy.gif)
 
-_Edita la firma con tus datos (en el apartado de firmas o con el editor de tu navegador. ```f12 | ctrl + shift + c | cmd + shift + c```:_
+_Edita la firma con tus datos (en el apartado de firmas o con el editor de tu navegador. ```ctrl + shift + c | cmd + shift + c``` :_
 
-![Gif Tutorial 2 para insertar firma ](https://media.giphy.com/media/GYvz2vYo5UEws9uIJT/giphy.gif)
+![Gif Tutorial 2 para insertar firma ](https://media.giphy.com/media/IUGRnKsnjpbTmoWobo/giphy.gif)
 
-![Gif Tutorial 2.5 para insertar firma ](https://media.giphy.com/media/3v87Z1uxvCUjEWOiSh/giphy.gif)
+**¡Cuidado con los enlaces!** _edita el vinculo en el apartado de firma (los numeros telefonicos y correos contienen enlaces)._
+
+![Gif Tutorial 2.5 para insertar firma ](https://media.giphy.com/media/J1H1sMY4pjIAMK8AOV/giphy.gif)
+
+![Gif Tutorial 2.6 para insertar firma ](https://media.giphy.com/media/X0RISzmDpbxKuTG92s/giphy.gif)
+
+_Sigue el mismo procedimiento con Windows Mail u Outlook_
+
+![Gif Tutorial 3 para insertar firma ](https://media.giphy.com/media/HdtNgOuT8I2Jfp8NfS/giphy.gif)
+
+De igual forma puedes editar el codigo de la firma con un editor de codigo ```Visual Code | NotePad ++ | Atom | etc```. El código presenta comentarios para editar los datos necesarios de la firma.
 
 ## Despliegue 📦
 
