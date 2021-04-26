@@ -8,7 +8,7 @@ _Simplemente abrir el archivo en cualquier navegador y copiar todo el contenido 
 
 ### Descarga 📦
 
-_Podrás encontrar el archivo ```HTML``` en la sección de ["Releases"](https://github.com/autmix/email-sign/releases) del repositorio.
+_Podrás encontrar el archivo ```HTML``` en la sección de ["Releases"](https://github.com/autmix/email-sign/releases) del repositorio._
 
 ### Instalación 🔧
 
