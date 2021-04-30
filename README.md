@@ -22,9 +22,7 @@ _Edita la firma con tus datos (en el apartado de firmas o con el editor de tu na
 
 ![Gif Tutorial 2 para insertar firma ](https://media.giphy.com/media/IUGRnKsnjpbTmoWobo/giphy.gif)
 
-**¡Cuidado con los enlaces!** _edita el vinculo en el apartado de firma (los numeros telefonicos y correos contienen enlaces)._
-
-![Gif Tutorial 2.5 para insertar firma ](https://media.giphy.com/media/J1H1sMY4pjIAMK8AOV/giphy.gif)
+**¡Cuidado con los enlaces!** _edita el vinculo en el apartado de firma ( los correo electrónicos contienen enlaces)._
 
 ![Gif Tutorial 2.6 para insertar firma ](https://media.giphy.com/media/X0RISzmDpbxKuTG92s/giphy.gif)
 
