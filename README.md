@@ -26,7 +26,7 @@ _Edita la firma con tus datos (en el apartado de firmas o con el editor de tu na
 
 ![Gif Tutorial 2.6 para insertar firma ](https://media.giphy.com/media/X0RISzmDpbxKuTG92s/giphy.gif)
 
-_Sigue el mismo procedimiento con Windows Mail u Outlook_
+_Sigue el mismo procedimiento con Windows Mail u Outlook (unicamente se modifica el vinculo del correo electrónico)._
 
 ![Gif Tutorial 3 para insertar firma ](https://media.giphy.com/media/HdtNgOuT8I2Jfp8NfS/giphy.gif)
 
