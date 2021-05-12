@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"
+        integrity="sha512-KaIyHb30iXTXfGyI9cyKFUIRSSuekJt6/vqXtyQKhQP6ozZEGY8nOtRS6fExqE4+RbYHus2yGyYg1BrqxzV6YA=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/addons/cleave-phone.us.js" integrity="sha512-sYKXH+IAMtg7mVursFAH+Xu1mIvmSqTd8LTEhKdRmvJhtX2IKUFpkZBZ9pigORvIR6Nt5klEF/P+psiJRa6crQ==" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <style>
+        .root-container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+        }
+        .form-container {
+            display: flex;
+            width: 35%;
+            margin: auto
+        }
+        .form {
+            width: 100%;
+            min-width: 400px;
+            background-color: #04376c;
+            color: white;
+            padding: 6%;
+            border-radius: 20px;
+        }
+        .form-ext {
+            display: flex;
+        }
+
+        .MsoNormalC {
+            font-size: 9pt;
+            line-height: 9pt;
+            color: #425054;
+            font-family: Verdana, sans-serif;
+            mso-line-height-rule: exactly;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .im{
+            color:#425054 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="main-container">
+        <div class="root-container">
+            <div class="form-container">
+                <form class="form" id="email_signature-form" onsubmit="createEmailSignature()">
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" id="first_name-input" class="form-control" maxlength="30" required/>
+                                <label class="form-label" for="first_name-input">First name</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" id="last_name-input" class="form-control" maxlength="30" required/>
+                                <label class="form-label" for="last_name-input">Last name</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" id="job-input" class="form-control" maxlength="100"/>
+                        <label class="form-label" for="job-input">Job</label>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="email-input" class="form-control" maxlength="70" required/>
+                        <label class="form-label" for="email-input">Email address</label>
+                    </div>
+
+                    <!-- Phone Fields -->
+                    <div class="form-ext">
+                        <!-- Extension Phone input -->
+                        <div class="form-outline mb-4" style="width: 15%; margin-right:2%">
+                            <input type="number" max="99" maxlength="1" placeholder="Ext" value="52"
+                                id="phone_extension-input" class="form-control" oninput="refreshCountryCode('p')"/>
+                            <label class="form-label" for="phone_extension-input">Extension</label>
+                        </div>
+                        <!-- Phone input -->
+                        <div class="form-outline mb-4" style="width: 83%;">
+                            <input type="tel" id="phone-input" class="contact_number-input form-control"/>
+                            <label class="form-label" for="phone-input">Phone Number</label>
+                        </div>
+                    </div>
+
+                    <!-- Cellphone Fields -->
+                    <div class="form-ext">
+                        <!-- Extension cellphone Phone input -->
+                        <div class="form-outline mb-4" style="width: 15%; margin-right:2%">
+                            <input type="number" max="99" maxlength="1" placeholder="Ext" value="52"
+                                id="cellphone_extension-input" class="form-control" oninput="refreshCountryCode('c')" required/>
+                            <label class="form-label" for="cellphone_extension-input">Extension</label>
+                        </div>
+                        <!-- Cellphone input -->
+                        <div class="form-outline mb-4" style="width: 83%;">
+                            <input type="tel" id="cellphone-input" class="form-control contact_number-input" required/>
+                            <label class="form-label" for="cellphone-input">Cellphone Number</label>
+                        </div>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block btn-lg" style="width: 100%;">Create</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <section id="email-signature" style="display: none;">
+        <table class="MsoNormalC" border="0" cellspacing="0" cellpadding="0" style=" border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; 
+        -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; border-collapse:collapse;
+        padding-left: 0cm; padding-top: 0cm; padding-right: 0cm; padding-bottom: 0cm;
+        margin-left: 0cm; margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm;
+        line-height: 9pt;">
+            <tbody>
+                <tr>
+                    <td style="width: 8cm; 
+                    padding-left: 0cm; padding-top: 0cm; padding-right: 0cm; padding-bottom: 0cm;
+                    margin-left: 0cm; margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm;  
+                    break-inside: avoid; line-height: 9pt;">
+                        <p class="MsoNormalC" style="
+                        font-size:9pt;  
+                        line-height: 9pt;
+                        font-family: Verdana, sans-serif;
+                        text-align: left;
+                        color:#425054 !important;
+                        margin-top: 0px !important;
+                        margin-bottom: 0px !important;
+                        text-decoration: none;">
+                            <a href="https://autmix.com" target="_blank" style=" text-decoration: none !important;">
+                                <img width="132" height="32" align="center" valign="middle" style=" text-align:center; vertical-align: middle; text-decoration: none !important; 
+                                height: 32px !important; width: 132px !important;" alt="autmix_logo" src="https://firma-mail-autmix.s3.us-east-2.amazonaws.com/autmix_logo.png">
+                            </a>
+
+                            <br>
+                            <br>
+                        
+                            <a class="MsoNormalC" href="https://autmix.com/cfg-mixers/" target="equip" style="
+                            font-size:8pt;
+                            font-family: Verdana, sans-serif;
+                            text-align: left;
+                            margin-top: 0px !important;
+                            margin-bottom: 0px !important;
+                            text-decoration: none;
+                            color: #54666b; 
+                            text-decoration-color:#54666b;
+                            font-weight:bold;">Flow</a>
+                            
+
+                            <span class="MsoNormalC" style="
+                            font-size:9pt;     
+                            font-family: Verdana, sans-serif;
+                            color:#00f5f5;
+                            font-weight: bold;
+                            margin-top: 0px !important;
+                            margin-bottom: 0px !important;">|</span>
+
+                            
+                            <a class="MsoNormalC" href="https://autmix.com/pragma-engineering/" target="engine" style="
+                            font-size:8pt;    
+                            font-family: Verdana, sans-serif;
+                            text-align: left;
+                            margin-top: 0px !important;
+                            margin-bottom: 0px !important;
+                            text-decoration: none;
+                            color: #54666b; 
+                            text-decoration-color:#54666b;
+                            font-weight:bold;">Process</a>
+                            
+
+                            <span class="MsoNormalC" style="
+                            font-size:9pt;     
+                            font-family: Verdana, sans-serif;
+                            color:#00f5f5;
+                            font-weight: bold;
+                            margin-top: 0px !important;
+                            margin-bottom: 0px !important;">|</span>
+
+                            
+                            <a class="MsoNormalC" href="https://autmix.com/az13-automation/" target="autom" style="
+                            font-size:8pt; 
+                            font-family: Verdana, sans-serif;
+                            text-align: left;
+                            margin-top: 0px !important;
+                            margin-bottom: 0px !important;
+                            text-decoration: none;
+                            color: #54666b; 
+                            text-decoration-color:#54666b;
+                            font-weight:bold;">
+                                    Industrial IT</a>
+                            
+                            <br>
+                            <br>
+                        </p>
+                        <!-- DATOS PERSONALES -->
+                        <p class="MsoNormalC" style="
+                        font-size:9pt;  
+                        line-height: 9pt;
+                        font-family: Verdana, sans-serif;
+                        text-align: left;
+                        color:#425054 !important;
+                        margin-top: 0px !important;
+                        margin-bottom: 0px !important;
+                        text-decoration: none;">
+                            <span id="name-field" style="
+                            font-size:10pt;     
+                            font-family: Verdana, sans-serif;
+                            color:#111111;
+                            text-align: left;
+                            margin-top: 0px !important;
+                            margin-bottom: 0px !important;">
+                                <!-- NOMBRE APELLIDO -->
+                            </span>
+        
+                            <span id="job-field" style="
+                            font-size:9pt; 
+                            font-family: Verdana, sans-serif;
+                            text-align: left;
+                            margin-top: 0px !important;
+                            margin-bottom: 0px !important;
+                            color:#425054 !important;
+                            text-decoration: none;">
+                                <!-- TEXTO Puesto -->
+                            </span>
+
+                            <span class="MsoNormalC" id="phone-field"
+                            style="
+                            font-size:9pt; 
+                            font-family: Verdana, sans-serif;
+                            text-align: left;
+                            margin-top: 0px !important;
+                            margin-bottom: 0px !important;
+                            color:#425054 !important;
+                            text-decoration: none;">
+                                <!-- TEXTO TELEFONO 1 -->
+                            </span>
+
+                            <span class="MsoNormalC" id="cellphone-field"
+                            style="font-size:9pt;     
+                            font-family: Verdana, sans-serif;
+                            color:#425054 !important;
+                            margin-top: 0px !important;
+                            margin-bottom: 0px !important;
+                            text-decoration: none;">
+                                <!-- TEXTO TELEFONO 2 -->
+                            </span>
+
+                            <span class="MsoNormalC" style="
+                            font-size:9pt; 
+                            font-family: Verdana, sans-serif;
+                            text-align: left;
+                            margin-top: 0px !important;
+                            margin-bottom: 0px !important;
+                            text-decoration: none;">
+                                <!-- ENLACE MAIL -->
+                                <a id="email-field" href="mailto:a.autmix@autmix.com" 
+                                style="color: #0087f5;
+                                text-decoration-color:#fff;
+                                break-inside:avoid;">
+                                    <!-- TEXTO MAIL -->
+                                    a.autmix@autmix.com
+                                </a>
+                                <br>
+                            </span>
+                            <span class="MsoNormalC" style="
+                            font-size:9pt; 
+                            font-family: Verdana, sans-serif;
+                            text-align: left;
+                            margin-top: 0px !important;
+                            margin-bottom: 0px !important;
+                            text-decoration: none;">
+                                <a href="https://autmix.com" target="autmix_site" style="color: #0087f5;
+                                text-decoration-color:#fff;
+                                break-inside:avoid;">
+                                autmix.com
+                                </a>
+                                <br>
+                            </span>
+                        </p>
+                    </td>
+                </tr>
+                <!-- FIN DE DATOS PERSONALES -->
+                <tr>
+                    <td style="width: 8cm;
+                    height: 1.4cm; 
+                    padding-left: 0cm; padding-top: 0cm; padding-right: 0cm; padding-bottom: 0cm;
+                    margin-left: 0cm; margin-right: 0cm;  
+                    break-inside: avoid; line-height: 5pt;">
+                        <table border="0" cellspacing="0" cellpadding="0"
+                            style="border-collapse:collapse;border:none; height: 15px; margin-top: 0px;">
+                            <tbody>
+                                <tr>
+                                    <td align="left" valign="middle" style="width:18pt; margin:0; vertical-align: middle;">
+                                        <p class="MsoNormalC" style="
+                                        font-size:6pt;     
+                                        font-family:Calibri,sans-serif;
+                                        text-align: left;
+                                        margin-top: 0px;
+                                        margin-bottom: 0px;">
+                                            <a href="https://www.instagram.com/autmix/" target="autmix_facebook">
+                                                <img width="16" height="16"
+                                                    style=" width:16px !important; height:16px; vertical-align: middle; text-align: left;"
+                                                    alt="In"
+                                                    src="https://firma-mail-autmix.s3.us-east-2.amazonaws.com/instagram_icon.png">
+                                            </a>
+                                        </p>
+                                    </td>
+                                    <td align="center" valign="middle"
+                                        style="width:18pt; margin:0; vertical-align: middle;">
+                                        <p class="MsoNormalC" style="
+                                        font-size:6pt;     
+                                        font-family:Calibri,sans-serif;
+                                        text-align: center;
+                                        margin-top: 0px;
+                                        margin-bottom: 0px;">
+                                            <a href="https://www.facebook.com/autmix/" target="autmix_facebook">
+                                                <img width="8" height="16"
+                                                    style="width:8px !important; height:16px; vertical-align: middle; text-align: center;"
+                                                    alt="F"
+                                                    src="https://firma-mail-autmix.s3.us-east-2.amazonaws.com/facebook_icon.png">
+                                            </a>
+                                        </p>
+                                    </td>
+                                    <td align="right" valign="middle" style="width:18pt; margin:0; vertical-align: middle;">
+                                        <p class="MsoNormalC" style="
+                                        font-size:6pt;     
+                                        font-family:Calibri,sans-serif;
+                                        text-align: right;
+                                        margin-top: 0px;
+                                        margin-bottom: 0px;">
+                                            <a href="https://www.linkedin.com/company/autmix" target="autmix_linkedIn">
+                                                <img width="16" height="16"
+                                                    style=" width:16px !important; height:16px; vertical-align: middle; text-align: right;"
+                                                    alt="lIn"
+                                                    src="https://firma-mail-autmix.s3.us-east-2.amazonaws.com/linkedIn_icon.png">
+                                            </a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <p class="MsoNormalC"
+                style="font-family:Roboto, sans-serif, Arial, sans-serif; font-size: 6pt; color: #586264; font-style: italic;">
+                This e-mail is addressed exclusively to the recipient and may contain privileged information under a
+                professional confidential agreement,
+                or it may be against the law to disclose its contents. Any opinion contained in it belongs exclusively to
+                his/her author and does not necessarily
+                reflect the company’s view. If you receive this e-mail in error, please let us know immediately (by return
+                e-mail) and proceed to its destruction,
+                as well as any document attached to it. The sending of e-mails through the Internet is not safe and,
+                therefore, error-free communications cannot
+                be guaranteed, as they can be intercepted, changed, misled, or destroyed or they might contain a virus. Any
+                user contacting us through e-mails
+                shall be understood to be assuming these risks.
+            </p>
+        </div>
+    </section>
+    <script>
+        // Inputs Declaration
+        var fNameInput = document.getElementById("first_name-input");
+        var lNameInput = document.getElementById("last_name-input");
+        
+        var jobInput = document.getElementById("job-input");
+        var emailInput = document.getElementById("email-input");
+
+        var phoneExtensionInput = document.getElementById("phone_extension-input");
+        var phoneInput = document.getElementById("phone-input");
+        var cellphoneExtensionInput = document.getElementById("cellphone_extension-input");
+        var cellphoneInput = document.getElementById("cellphone-input");
+        // Number Phone/Cellphone Formatter
+        var cleavePhone = new Cleave('#phone-input', {phone: true, phoneRegionCode: 'US'});
+        var cleaveCellphone = new Cleave('#cellphone-input', {phone: true, phoneRegionCode: 'US'});
+
+        // Field of the signature Declaration
+        var nameField = document.getElementById("name-field");
+        
+        var jobField = document.getElementById("job-field");
+        var emailField = document.getElementById("email-field");
+
+        var phoneField = document.getElementById("phone-field");
+        var cellphoneField = document.getElementById("cellphone-field");
+        
+        function createEmailSignature(){
+            nameField.innerHTML= `${fNameInput.value} ${lNameInput.value}<br>`
+            jobField.innerHTML= jobInput.value + '<br>';
+            phoneField.innerHTML= ((phoneInput.value === "" ) ? '' : `Of1 +${phoneExtensionInput.value} ${phoneInput.value}<br>`);
+            cellphoneField.innerHTML= `Cel +${cellphoneExtensionInput.value} ${cellphoneInput.value}<br>`
+            emailField.innerHTML= emailInput.value;
+            emailField.href= `mailto:${emailInput.value}`
+            event.preventDefault();
+            document.getElementById("main-container").style.display='none';
+            document.getElementById("email-signature").style.display='initial';
+            
+        }
+    </script>
+</body>
+
+</html>
