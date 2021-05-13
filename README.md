@@ -14,7 +14,7 @@ _Simplemente editar la firma en el enlace, ```ctrl a - cmd + a (seleccionar todo
 ### Instalación 🔧
 
 #### RECOMENDADO - (Editor Online - NO requiere descarga)
-Liga del editor (Abrir en una nueva pestaña): <a target="_blank" href="https://codesandbox.io/s/emailsignaturev453-148sq?file=/index.html">Code Sanbox Email Signature</a>
+Liga del editor (Abrir en una nueva pestaña ```ctrl + clic```): <a target="_blank" href="https://codesandbox.io/s/emailsignaturev453-148sq?file=/index.html">Code Sanbox Email Signature</a>
 
 
 _Abra el <a target="_blank" href="https://codesandbox.io/s/emailsignaturev453-148sq?file=/index.html">"enlace"</a> del editor online en cualquier navegador_
