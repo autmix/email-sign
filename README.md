@@ -43,7 +43,7 @@ _Guardar los cambios y ¡listo!_
 
 
 
-#### (Editor de firmas - requiere descarga)
+#### (METODO #2- Editor de firmas - REQUIERE DESCARGA)
 
 #### Descarga  📦
 
