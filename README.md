@@ -14,10 +14,10 @@ _Simplemente editar la firma en el enlace, ```ctrl a - cmd + a (seleccionar todo
 ### Instalación 🔧
 
 #### RECOMENDADO - (Editor Online - NO requiere descarga)
-Liga del editor: https://codesandbox.io/s/emailsignaturev453-148sq?file=/index.html
+Liga del editor: !https://codesandbox.io/s/emailsignaturev453-148sq?file=/index.html
 
 
-_Abra el ["enlace"](https://codesandbox.io/s/emailsignaturev453-148sq?file=/index.html) del editor online en cualquier navegador_
+_Abra el !["enlace"](https://codesandbox.io/s/emailsignaturev453-148sq?file=/index.html) del editor online en cualquier navegador_
 
 
 _Edite los campos de la firma por los suyos (como en la animación)_
