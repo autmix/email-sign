@@ -16,9 +16,9 @@ _Simplemente editar la firma en el enlace, `ctrl a - cmd + a (seleccionar todo) 
 
 #### RECOMENDADO - (Editor Online - NO requiere descarga)
 
-Liga del editor (Abrir en una nueva pestaña `ctrl + clic`): <a target="_blank" href="https://codesandbox.io/s/thirsty-river-1elpvb?file=/index.html">Code Sanbox Email Signature</a>
+Liga del editor (Abrir en una nueva pestaña `ctrl + clic`): <a target="_blank" href="https://codesandbox.io/s/9yxxot">Code Sanbox Email Signature</a>
 
-_Abra el <a target="_blank" href="https://codesandbox.io/s/thirsty-river-1elpvb?file=/index.html">"enlace"</a> del editor online en cualquier navegador_
+_Abra el <a target="_blank" href="https://codesandbox.io/s/9yxxot">"enlace"</a> del editor online en cualquier navegador_
 
 _Edite los campos de la firma por los suyos (como en la animación)_
 
