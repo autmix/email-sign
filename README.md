@@ -66,6 +66,15 @@ _Sigue el mismo procedimiento con Windows Mail u Outlook (unicamente se modifica
 
 De igual forma puedes editar el codigo de la firma con un editor de codigo `Visual Code | NotePad ++ | Atom | etc`. El código presenta comentarios para editar los datos necesarios de la firma.
 
+## Video tutorial
+
+Si aún tienes dudas de como se puede insertar la firma a tu correo, da un vistazo a los videos que se muestran a continuación:
+
+_Si deseas insertar la firma desde Gmail, haz click <a target="_blank" href="https://www.loom.com/share/b7da47fe3d7f4ef7bc55be84197be182">aquí</a> para ver el tutorial._
+
+_Si deseas insertar la firma desde Outlook, haz click <a target="_blank" href="https://www.loom.com/share/d3505c33716f4cdfbe8d3e79b86bb182">aquí</a> para ver el tutorial._
+
+
 ## Despliegue 📦
 
 _Cualquier actualización del archivo o firma se mantendra en el repositorio al igual toda versión creada para la firma de la empresa._
